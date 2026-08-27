@@ -38,6 +38,20 @@ export default function Gallery() {
       src: "/imagen4.jpg",
       before: false,
     },
+    {
+      id: 5,
+      title: "Trabajo 5",
+      category: "Mecánica General",
+      src: "/imagen5.jpg",
+      before: true,
+    },
+    {
+      id: 6,
+      title: "Chapa y Pintura",
+      category: "Chapa y Pintura",
+      src: "/chapaypintura.jpg",
+      before: false,
+    },
   ];
 
   const categories = ["Todos", "Mecánica General", "Chapa y Pintura"];
