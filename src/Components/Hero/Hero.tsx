@@ -10,6 +10,13 @@ export default function Hero() {
 
   return (
     <div className="relative min-h-screen bg-black overflow-hidden pt-16">
+      {/* Background Image */}
+      <img
+        src="/fondo.jpg"
+        alt=""
+        className="absolute inset-0 w-full h-full object-cover opacity-15"
+      />
+
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
