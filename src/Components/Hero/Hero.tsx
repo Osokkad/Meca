@@ -9,7 +9,7 @@ export default function Hero() {
   ];
 
   return (
-    <div className="relative min-h-screen bg-black overflow-hidden pt-16">
+    <div className="relative min-h-screen bg-black overflow-hidden pt-16 pb-20">
       {/* Background Image */}
       <img
         src="/fondo.jpg"
