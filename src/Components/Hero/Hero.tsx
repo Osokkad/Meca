@@ -13,8 +13,9 @@ export default function Hero() {
       {/* Background Image */}
       <img
         src="/fondo.jpg"
-        alt=""
+        alt="Boxes Competicion - Taller mecánico en Ituzaingó Zona Sur"
         className="absolute inset-0 w-full h-full object-cover opacity-15"
+        loading="eager"
       />
 
       {/* Background Pattern */}

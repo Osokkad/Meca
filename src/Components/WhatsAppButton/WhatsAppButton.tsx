@@ -9,6 +9,7 @@ export default function WhatsAppButton() {
       href={`https://wa.me/${number}?text=${encodeURIComponent(message)}`}
       target="_blank"
       rel="noopener noreferrer"
+      aria-label="Contactar a Boxes Competicion por WhatsApp"
       className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg hover:shadow-green-500/40 transition-all transform hover:scale-110 z-50 flex items-center justify-center group animate-float"
       title="Contactanos por WhatsApp"
     >
