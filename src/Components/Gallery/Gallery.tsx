@@ -15,56 +15,48 @@ export default function Gallery() {
       title: "Trabajo 1",
       category: "Mecánica General",
       src: "/imagen1.jpg",
-      before: true,
     },
     {
       id: 2,
       title: "Trabajo 2",
       category: "Mecánica General",
       src: "/imagen2.jpg",
-      before: false,
     },
     {
       id: 3,
       title: "Trabajo 3",
       category: "Chapa y Pintura",
       src: "/imagen3.jpg",
-      before: true,
     },
     {
       id: 4,
       title: "Trabajo 4",
       category: "Chapa y Pintura",
       src: "/imagen4.jpg",
-      before: false,
     },
     {
       id: 5,
       title: "Trabajo 5",
       category: "Mecánica General",
       src: "/imagen5.jpg",
-      before: true,
     },
     {
       id: 6,
       title: "Chapa y Pintura",
       category: "Chapa y Pintura",
       src: "/chapaypintura.jpg",
-      before: false,
     },
     {
       id: 7,
       title: "Chapa y Pintura 2",
       category: "Chapa y Pintura",
       src: "/chapaypintura2.jpg",
-      before: true,
     },
     {
       id: 8,
       title: "Chapa y Pintura 3",
       category: "Chapa y Pintura",
       src: "/chapaypintura3.jpg",
-      before: false,
     },
   ];
 
@@ -81,7 +73,7 @@ export default function Gallery() {
           <span className="text-amber-600 font-semibold text-sm uppercase tracking-wide">Galería</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-2 text-black">Nuestros Trabajos</h2>
           <p className="text-lg text-neutral-600 mt-4 max-w-2xl mx-auto">
-            Mira algunos de los trabajos que realizamos. Antes y después de nuestras reparaciones.
+            Mira algunos de los trabajos que realizamos.
           </p>
         </div>
 
@@ -120,18 +112,8 @@ export default function Gallery() {
 
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                <p className={`text-xs font-bold mb-1 ${image.before ? "text-amber-400" : "text-neutral-300"}`}>
-                  {image.before ? "ANTES" : "DESPUÉS"}
-                </p>
                 <p className="text-white font-bold text-sm mb-1">{image.title}</p>
                 <p className="text-neutral-400 text-xs">{image.category}</p>
-              </div>
-
-              {/* Badge */}
-              <div
-                className={`absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-bold ${image.before ? "bg-amber-500 text-black" : "bg-white text-black"}`}
-              >
-                {image.before ? "Antes" : "Después"}
               </div>
             </div>
           ))}
@@ -161,11 +143,6 @@ export default function Gallery() {
               />
               <div className="bg-neutral-900 rounded-lg p-6 text-white">
                 <div className="flex items-center gap-3 mb-2">
-                  <span
-                    className={`px-3 py-1 rounded-full text-sm font-bold ${filteredImages[selectedImage].before ? "bg-amber-500 text-black" : "bg-white text-black"}`}
-                  >
-                    {filteredImages[selectedImage].before ? "Antes" : "Después"}
-                  </span>
                   <span className="text-amber-400 text-sm">{filteredImages[selectedImage].category}</span>
                 </div>
                 <h3 className="text-2xl font-bold">{filteredImages[selectedImage].title}</h3>
