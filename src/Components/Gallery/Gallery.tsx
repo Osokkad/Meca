@@ -12,63 +12,35 @@ export default function Gallery() {
   const images = [
     {
       id: 1,
-      title: "Reparación de Chapa - Toyota Corolla",
-      category: "Chapa y Pintura",
-      src: "https://images.unsplash.com/photo-1625047509248-ec889cbff17f?w=600&h=400&fit=crop",
+      title: "Trabajo 1",
+      category: "Mecánica General",
+      src: "/imagen1.jpg",
       before: true,
     },
     {
       id: 2,
-      title: "Reparación de Chapa - Toyota Corolla",
-      category: "Chapa y Pintura",
-      src: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=600&h=400&fit=crop",
+      title: "Trabajo 2",
+      category: "Mecánica General",
+      src: "/imagen2.jpg",
       before: false,
     },
     {
       id: 3,
-      title: "Revisión de Motor - Ford Focus",
-      category: "Mecánica General",
-      src: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&h=400&fit=crop",
+      title: "Trabajo 3",
+      category: "Chapa y Pintura",
+      src: "/imagen3.jpg",
       before: true,
     },
     {
       id: 4,
-      title: "Revisión de Motor - Ford Focus",
-      category: "Mecánica General",
-      src: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600&h=400&fit=crop",
-      before: false,
-    },
-    {
-      id: 5,
-      title: "Pintura Completa - Chevrolet Cruze",
+      title: "Trabajo 4",
       category: "Chapa y Pintura",
-      src: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&h=400&fit=crop",
-      before: true,
-    },
-    {
-      id: 6,
-      title: "Pintura Completa - Chevrolet Cruze",
-      category: "Chapa y Pintura",
-      src: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=600&h=400&fit=crop",
-      before: false,
-    },
-    {
-      id: 7,
-      title: "Sistema Eléctrico - Renault Duster",
-      category: "Electricidad Automotriz",
-      src: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop",
-      before: true,
-    },
-    {
-      id: 8,
-      title: "Sistema Eléctrico - Renault Duster",
-      category: "Electricidad Automotriz",
-      src: "https://images.unsplash.com/photo-1507136566006-cfc505b114fc?w=600&h=400&fit=crop",
+      src: "/imagen4.jpg",
       before: false,
     },
   ];
 
-  const categories = ["Todos", "Chapa y Pintura", "Mecánica General", "Electricidad Automotriz"];
+  const categories = ["Todos", "Mecánica General", "Chapa y Pintura"];
   const [activeCategory, setActiveCategory] = useState("Todos");
 
   const filteredImages = activeCategory === "Todos" ? images : images.filter((img) => img.category === activeCategory);
