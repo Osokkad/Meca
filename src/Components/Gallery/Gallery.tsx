@@ -59,6 +59,13 @@ export default function Gallery() {
       src: "/chapaypintura2.jpg",
       before: true,
     },
+    {
+      id: 8,
+      title: "Chapa y Pintura 3",
+      category: "Chapa y Pintura",
+      src: "/chapaypintura3.jpg",
+      before: false,
+    },
   ];
 
   const categories = ["Todos", "Mecánica General", "Chapa y Pintura"];
